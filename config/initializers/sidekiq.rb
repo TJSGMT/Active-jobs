@@ -1,4 +1,4 @@
-redis "sidekiq/server"
+# redis "sidekiq/server"
 
 # if Rails.environment.development?
 #   Sidekiq.redis = Redis.new(host: 'localhost', port: '6379')
