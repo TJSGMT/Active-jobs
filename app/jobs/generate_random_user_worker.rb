@@ -4,8 +4,7 @@ class GenerateRandomUserWorker
   def perform(*args)
     user = User.new
     user.name = Faker::Name.name
-    user.contact = Faker::Number.number(digits: 10)
+    user.contact = Faker::Number.number(digits: 10).to_s
     user.save!
-    sleep 2
   end
 end
