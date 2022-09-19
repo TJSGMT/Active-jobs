@@ -8,3 +8,4 @@ class GenerateRandomUserWorker
     user.save!
   end
 end
+  
