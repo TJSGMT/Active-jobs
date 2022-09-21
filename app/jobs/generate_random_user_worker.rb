@@ -7,6 +7,6 @@ class GenerateRandomUserWorker
     user.name = Faker::Name.name
     user.contact = Faker::Number.number(digits: 10)
     user.save!
-    sleep 2
+    # redirect_to root_path
   end
 end

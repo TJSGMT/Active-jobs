@@ -73,3 +73,4 @@ end
 gem 'faker'
 gem 'sidekiq'
 gem 'pry'
+gem 'whenever' , require: false
