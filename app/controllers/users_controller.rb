@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def index
     @users = User.all
   end
@@ -10,6 +11,6 @@ class UsersController < ApplicationController
 
   def destroy_all
     User.all.destroy_all
-    redirect_to root_path
+    redirect_to root_path[]
   end
 end
