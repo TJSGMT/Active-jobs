@@ -75,3 +75,4 @@ gem 'sidekiq'
 gem 'pry'
 gem 'whenever' , require: false
 gem 'delayed_job_active_record'
+gem 'sidekiq-cron'
