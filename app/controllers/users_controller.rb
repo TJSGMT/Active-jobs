@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   end
 
   def create
-    GenerateRandomUserWorker.perform_async
+     GenerateRandomUserWorker.perform_async
+    AddMailerWorker.perform_async(User.last.email)
     redirect_to root_path
   end
 

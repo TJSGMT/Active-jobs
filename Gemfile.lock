@@ -96,6 +96,10 @@ GEM
       activerecord (>= 3.0, < 8.0)
       delayed_job (>= 3.0, < 5)
     digest (3.1.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.11.0)
     et-orbi (1.2.7)
       tzinfo
@@ -247,9 +251,11 @@ DEPENDENCIES
   capybara
   debug
   delayed_job_active_record
+  dotenv-rails
   faker
   importmap-rails
   jbuilder
+  mail
   pry
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)

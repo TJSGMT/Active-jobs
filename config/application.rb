@@ -5,6 +5,7 @@ require "rails/all"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+Dotenv::Railtie.load
 
 module QuickUser
   class Application < Rails::Application
@@ -20,6 +21,7 @@ module QuickUser
     # config.eager_load_paths << Rails.root.join("extras")
     # config.active_job.queue_adapter = :sidekiq 
     config.active_job.queue_adapter = :delayed_job
+    require 'dotenv/load'
   end
   
 end
