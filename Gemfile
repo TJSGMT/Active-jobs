@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 # Use sqlite3 as the database for Active Record
 gem "sqlite3", "~> 1.4"
@@ -73,3 +74,7 @@ end
 gem 'faker'
 gem 'sidekiq'
 gem 'pry'
+gem 'whenever' , require: false
+gem 'delayed_job_active_record'
+gem 'sidekiq-cron'
+gem 'mail'
