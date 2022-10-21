@@ -2,3 +2,10 @@
 :queues:
   - high
   - low
+
+:schedule:
+  SidekiqSchedulerWorker:
+    cron: '0 * * * * *'    # Runs once per minute
+    queue: scheduler
+    enabled: true
+    # class: SidekiqSchedulerWorker

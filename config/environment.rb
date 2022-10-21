@@ -17,3 +17,4 @@ ActionMailer::Base.smtp_settings = {
     :tsl => true,
     enable_starttls_auto: true
   }
+
