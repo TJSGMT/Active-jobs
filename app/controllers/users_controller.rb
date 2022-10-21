@@ -5,8 +5,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    GenerateRandomUserWorker.set(queue: 'high').perform_async()
-    AddMailerWorker.set(queue: 'low').perform_async(User.last.email)
+    GenerateRandomUserWorker.set(queue: 'low').perform_async()
+    # binding.pry
+    # AddMailerWorker.set(queue: 'high').perform_async(User.last.email)
+    AddMailerWorker.perform_now(User.last.email)
     redirect_to root_path
   end
 

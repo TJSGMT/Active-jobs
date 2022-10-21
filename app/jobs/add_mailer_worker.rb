@@ -1,6 +1,6 @@
-# class AddMailerWorker < ApplicationJob
-  class AddMailerWorker 
-  include Sidekiq::Worker
+class AddMailerWorker < ApplicationJob
+  # class AddMailerWorker 
+  # include Sidekiq::Worker
 
   def perform(email)
     # binding.pry
